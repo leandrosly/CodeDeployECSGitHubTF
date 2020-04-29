@@ -57,3 +57,8 @@ output "alb_dns_name" {
   value       = aws_lb.alb.dns_name
   description = ""
 }
+
+output "ecs_task_definition_arn" {
+  value       = aws_ecs_task_definition.task_def.arn
+  description = ""
+}

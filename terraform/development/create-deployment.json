@@ -1,0 +1,12 @@
+{
+    "applicationName": "ecs-deploy-dev",
+    "deploymentGroupName": "ecs-deploy-dev",
+    "revision": {
+        "revisionType": "S3",
+        "s3Location": {
+            "bucket": "ecs-deploy-dev",
+            "key": "appspec.yaml",
+            "bundleType": "YAML"
+        }
+    }
+}

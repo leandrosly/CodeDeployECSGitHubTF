@@ -1,0 +1,10 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-northeast-2:688980480079:task-definition/ecs-deploy-dev:10"
+        LoadBalancerInfo:
+          ContainerName: "ecs-deploy-dev-sample-app"
+          ContainerPort: 80
+        PlatformVersion: "LATEST"
